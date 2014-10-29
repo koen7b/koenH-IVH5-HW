@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Praktijken>
+	<Praktijk>
+		<Gegevens> <!-- gegevens van fysieke praktijk -->
+			<Naam>Fysiotherapiepraktijk 't Losse Handje</Naam>
+			<Adres>Kerkstraat 3</Adres>
+			<Postcode>1234AB</Postcode>
+			<Plaats>Amsterdam</Plaats>
+			<Telefoonnummer>010-1234567</Telefoonnummer>		
+		</Gegevens>
+		
+		<Ruimtes> <!-- Behandelruimtes -->
+			<Ruimte id="1">
+				<Naam>001</Naam>
+				<Omschrijving>Behandeltafel, Massage-olie</Omschrijving> <!-- aanwezige instrumenten etc -->
+			</Ruimte>
+			<Ruimte id="2">
+				<Naam>002</Naam>
+				<Omschrijving>Behandeltafel, Massage-olie, Fysio-tape</Omschrijving> <!-- aanwezige instrumenten etc -->
+			</Ruimte>
+		</Ruimtes>
+		
+		<Therapeuten> <!-- gegevens van therapeuten die in de praktijk werken -->
+			<Therapeut id="1">
+				<BSN>615691688</BSN>
+				<Naam>Jan Klaassen</Naam>
+				<Adres>Kerkstraat 17</Adres>
+				<Postcode>1234AB</Postcode>
+				<Plaats>Amsterdam</Plaats>
+				<Telefoonnummer>010-2345678</Telefoonnummer>
+				<DatumDiensttreding>12-03-2011</DatumDiensttreding>
+			</Therapeut>
+			<Therapeut id="2">
+				<BSN>987546214</BSN>
+				<Naam>Klaas Janssen</Naam>
+				<Adres>Dorpsstraat 78</Adres>
+				<Postcode>1234BQ</Postcode>
+				<Plaats>Amsterdam</Plaats>
+				<Telefoonnummer>010-8954758</Telefoonnummer>
+				<DatumDiensttreding>27-11-2012</DatumDiensttreding>
+			</Therapeut>
+		</Therapeuten>
+	</Praktijk>
+</Praktijken>

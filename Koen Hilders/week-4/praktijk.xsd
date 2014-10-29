@@ -1,0 +1,64 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Praktijk">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="Gegevens">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Naam">
+                <xs:annotation>
+                  <xs:documentation>gegevens van fysieke praktijk</xs:documentation>
+                </xs:annotation>
+              </xs:element>
+              <xs:element type="xs:string" name="Adres"/>
+              <xs:element type="xs:string" name="Postcode"/>
+              <xs:element type="xs:string" name="Plaats"/>
+              <xs:element type="xs:string" name="Telefoonnummer"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Ruimtes">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Ruimte" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>Behandelruimtes  aanwezige instrumenten etc  aanwezige instrumenten etc</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:byte" name="Naam"/>
+                    <xs:element type="xs:string" name="Omschrijving"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="Therapeuten">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Therapeut" maxOccurs="unbounded" minOccurs="0">
+                <xs:annotation>
+                  <xs:documentation>gegevens van therapeuten die in de praktijk werken</xs:documentation>
+                </xs:annotation>
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element type="xs:int" name="BSN"/>
+                    <xs:element type="xs:string" name="Naam"/>
+                    <xs:element type="xs:string" name="Adres"/>
+                    <xs:element type="xs:string" name="Postcode"/>
+                    <xs:element type="xs:string" name="Plaats"/>
+                    <xs:element type="xs:string" name="Telefoonnummer"/>
+                    <xs:element type="xs:string" name="DatumDiensttreding"/>
+                  </xs:sequence>
+                  <xs:attribute type="xs:byte" name="id" use="optional"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
